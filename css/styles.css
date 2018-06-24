@@ -1,0 +1,254 @@
+body {
+  background-color: #C0C0C0;
+}
+
+#timer {
+  border: 2px solid #282828FF;
+  width: 270px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 40px #282828FF, 5px 5px 40px #282828FF;
+}
+
+#box-time {
+  border: 8px inset #3c3c3c;
+  width: 224px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #726e6e;
+  box-shadow: inset 5px 5px 40px #282828FF, 5px 5px 40px #282828FF;
+  text-align: center;
+}
+
+#minutes,
+#seconds,
+#separator {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#points {
+  display: inline-block;
+  vertical-align: middle;
+  height: 64px;
+  margin: 10px auto;
+  list-style: none;
+  padding: 0;
+}
+
+#points li {
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  visibility: visible;
+}
+
+#points li:first-child {
+  margin-top: 16px;
+}
+
+#points li:last-child {
+  margin-top: 12px;
+}
+
+.indicator {
+  display: inline-block;
+  vertical-align: middle;
+  height: 64px;
+  width: 37px;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin: 10px auto;
+}
+
+.indicator > li  {
+  position: absolute;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+ul li:after,
+ul li:before {
+  content: '';
+  position: absolute;
+  border: 5px solid transparent;
+}
+
+.A {
+  top: 0;
+  width: 15px;
+  height: 10px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.A:after {
+  left: 15px; top: 0;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.A:before {
+  right: 15px; top: 0;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.B {
+  right: 0;
+  height: 15px;
+  width: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.B:after {
+  left: 0; top: 15px;
+  border-top: 5px solid black;
+}
+
+.B:before {
+  right: 0; top: -10px;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.C {
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  width: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.C:after {
+  left: 0; top: 15px;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.C:before {
+  right: 0; top: -10px;
+  border-bottom: 5px solid black;
+}
+
+.D {
+  bottom: 0;
+  width: 15px;
+  height: 10px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.D:after {
+  left: 15px; top: 0;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.D:before {
+  right: 15px; top: 0;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.E {
+  left: 0;
+  bottom: 0;
+  height: 15px;
+  width: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.E:after {
+  left: 0; top: 15px;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.E:before {
+  right: 0; top: -10px;
+  border-bottom: 5px solid black;
+}
+
+.F {
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.F:after {
+  left: 0; top: 15px;
+  border-top: 5px solid black;
+}
+
+.F:before {
+  right: 0; top: -10px;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.G {
+  bottom: 27px;
+  width: 15px;
+  height: 10px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.G:after {
+  left: 15px; top: 0;
+  border-left: 5px solid black;
+}
+
+.G:before {
+  right: 15px; top: 0;
+  border-right: 5px solid black;
+
+}
+
+#box-control {
+  text-align: right;
+  margin: 10px 20px; 
+}
+
+#control-top {
+  margin-bottom: 5px;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button {
+  height: 23px;
+  border-radius: 5px;
+  background-color:#032a39;
+  text-transform: uppercase;
+  color: #B2B2B2FF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#btn-hour-up,
+#btn-min-up,
+#btn-sec-up,
+#btn-hour-down,
+#btn-min-down,
+#btn-sec-down {
+  width: 40px;
+}
+
+#btn-start,
+#btn-stop {
+  width: 60px;
+}
