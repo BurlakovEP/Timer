@@ -1,0 +1,23 @@
+.control {
+  &__block {
+    margin: 5px 20px;
+    text-align: right;
+  }
+}
+
+.button {
+  height: 23px;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: #032a39;
+  color: #b2b2b2ff;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  width: 45px;
+
+  &_stop,
+  &_start {
+    width: 60px;
+  }
+}

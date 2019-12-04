@@ -1,0 +1,47 @@
+.time {
+  width: 224px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 10px 0;
+  border: 8px inset #3c3c3c;
+  background-color: #726e6e;
+  box-shadow: inset 5px 5px 40px #282828ff, 5px 5px 40px #282828ff;
+  text-align: center;
+
+  &__minutes,
+  &__seconds,
+  &__separator {
+    display: inline-block;
+    margin: 0 2px;
+  }
+}
+
+.separator {
+  &__points {
+    display: inline-block;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    list-style: none;
+  }
+
+  &__point {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    visibility: visible;
+
+    &:first-child {
+      margin-top: 16px;
+    }
+
+    &:last-child {
+      margin-top: 12px;
+    }
+
+    &_invisible {
+      visibility: hidden;
+    }
+  }
+}

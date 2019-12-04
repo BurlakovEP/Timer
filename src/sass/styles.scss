@@ -1,0 +1,28 @@
+@import 'normalize';
+@import 'abstracts/_fonts';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'OpenSans-Regular', 'Helvetica', 'Geneva', 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #c0c0c0;
+}
+
+.timer {
+  width: 270px;
+  margin: 0 auto;
+  border: 2px solid #282828ff;
+  border-radius: 15px;
+  background-color: #333;
+  box-shadow: inset 5px 5px 40px #282828ff, 5px 5px 40px #282828ff;
+}
+
+@import 'layout/_time';
+@import 'layout/_control';
+@import 'components/_indicator';
